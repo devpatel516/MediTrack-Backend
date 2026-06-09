@@ -74,4 +74,13 @@ const extract=async(req,res)=>{
     }
 }
 
-module.exports={create,history,extract};
+const getDoctorVisits = async (req, res) => {
+    try {
+        const visits = await Visit.find().populate('patientId','name email').sort({ nextVisitDate: 1 }); 
+        res.status(200).json(visits);
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to fetch doctor visits' });
+    }
+};
+
+module.exports={create,history,extract,getDoctorVisits};
