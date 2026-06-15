@@ -15,6 +15,26 @@ The Flutter frontend for this project lives in a separate repository:
 
 - Frontend repo: https://github.com/devpatel516/MediTrack
 
+[![Download APK](https://img.shields.io/badge/Download-APK-green.svg)](https://github.com/devpatel516/MediTrack/releases)
+
+You can download the latest `.apk` from the [Releases page](https://github.com/devpatel516/MediTrack/releases).
+
+## Demo Video
+
+[Watch the Demo Video](https://drive.google.com/file/d/1UrdfOEzl_o4VXRdpN0aqSI72riuy66Oq/view?usp=drivesdk)
+
+## Test Credentials
+
+To quickly test the application without registering, use the following test credentials:
+
+**DOCTOR**
+- **Email:** `mohan.desai@gmail.com`
+- **Password:** `doctor123`
+
+**PATIENT**
+- **Email:** `raj.patel@gmail.com`
+- **Password:** `patient123`
+
 ## Tech Stack
 
 - Node.js
