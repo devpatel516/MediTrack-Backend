@@ -76,7 +76,14 @@ const extract=async(req,res)=>{
 
 const getDoctorVisits = async (req, res) => {
     try {
-        const visits = await Visit.find().populate('patientId','name email').sort({ nextVisitDate: 1 }); 
+        if (req.user.role !== 'doctor') {
+            return res.status(403).json({ error: 'Access denied. Only doctors can view visit records.' });
+        }
+
+        const visits = await Visit.find({ doctorId: req.user.id })
+            .populate('patientId', 'name email')
+            .sort({ nextVisitDate: 1 });
+
         res.status(200).json(visits);
     } catch (error) {
         res.status(500).json({ error: 'Failed to fetch doctor visits' });

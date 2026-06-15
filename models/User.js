@@ -18,6 +18,10 @@ const userSchema= new mongoose.Schema({
     name:{
         type:String,
         required:true
+    },
+    allergies:{
+        type:[String],
+        default:[]
     }
 },{timestamps:true});
 module.exports=mongoose.model('User',userSchema);
