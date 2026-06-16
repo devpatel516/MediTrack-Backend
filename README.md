@@ -21,7 +21,7 @@ You can download the latest `.apk` from the [Releases page](https://github.com/d
 
 ## Demo Video
 
-[Watch the Demo Video](https://drive.google.com/file/d/1UrdfOEzl_o4VXRdpN0aqSI72riuy66Oq/view?usp=drivesdk)
+[Watch the Demo Video](https://drive.google.com/file/d/15eBzcxvBYuaSKXNHAkcTM0ErIa0VG08G/view?usp=sharing)
 
 ## Test Credentials
 
